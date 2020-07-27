@@ -291,19 +291,19 @@ figure {
 }
 
 .social-link.twitter {
-    background-image: url(../../Fotos/twitter.svg);
+    background-image: url(./Fotos/twitter.svg);
 }
 
 .social-link.facebook {
-    background-image: url(../../Fotos/facebook.svg);
+    background-image: url(./Fotos/facebook.svg);
 }
 
 .social-link.github {
-    background-image: url(../../Fotos/imagen-de-github.svg);
+    background-image: url(./Fotos/imagen-de-github.svg);
 }
 
 .social-link.instagram {
-    background-image: url(../../Fotos/instagram-bosquejado.svg);
+    background-image: url(./Fotos/instagram-bosquejado.svg);
 }
 
 .form-email input {
@@ -311,7 +311,7 @@ figure {
     border-style: solid;
     border-radius: 5px;
     padding: 10px 20px 10px 25px;
-    background-image: url("../../Fotos/correo.svg");
+    background-image: url("./Fotos/correo.svg");
     background-size: 15px 15px;
     background-repeat: no-repeat;
     background-position-y: center;
