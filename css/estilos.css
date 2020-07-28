@@ -6,7 +6,7 @@ valores */
 
 /* selector de etiqueta header - section - article - nav - ...... */
 /* header {
-    background: pink;
+    background: pink;1
     color: red;
 } */
 
@@ -343,3 +343,16 @@ figure {
     height: inherit;
     flex-wrap: inherit;
 }
+
+/* Desktop First que empieces desde el MQ mas grande */
+@media screen and (max-width:1024px) {}
+
+@media screen and (max-width:768px) {
+    body {
+        border: 10px solid green;
+    }
+}
+
+@media screen and (max-width:480px) {}
+
+@media screen and (max-width:320px) {}
