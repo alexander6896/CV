@@ -12,14 +12,14 @@
 </head>
 
 <body>
-    <i class="icon-menu burguer-button"></i>
+    <i class="icon-menu burguer-button" id="burguer-menu"></i>
     <header class="header">
         <div class="container">
             <figure class="logo">
                 <img src="./Fotos/logoInverCorto.jpg" height="50px" alt="Logo Personal">
             </figure>
 
-            <nav class="menu is-active">
+            <nav class="menu">
                 <ol>
                     <li>
                         <a class="link" href="#portafolio">Portafolio</a>
@@ -148,11 +148,11 @@
                     <a class="event-url" href="" target="_blank">Ver</a>
                 </div>
             </article>
-            <div class="flexible-video">
+            <!-- <div class="flexible-video">
                 <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/dRIZNayrcLk"
                     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -185,6 +185,26 @@
             </div>
         </div>
     </footer>
+    <script>
+        console.log('Hola mundo! es mi primera linea en JS.');
+
+        const menu = document.querySelector('.menu');
+        console.log(menu);
+        const burguerButton = document.querySelector('#burguer-menu');
+        console.log(burguerButton);
+
+        burguerButton.addEventListener('click', hideShow);
+
+        // Function para mostrar y quitar el menu de hambuguer cuando se selecciona
+        //Acuerdate que la const menu selecciona la clase de menu
+        function hideShow() {
+            if (menu.classList.contains('is-active')) {
+                menu.classList.remove('is-active');
+            } else {
+                menu.classList.add('is-active');
+            }
+        }
+    </script>
 </body>
 
 </html>
