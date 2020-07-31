@@ -148,11 +148,11 @@
                     <a class="event-url" href="" target="_blank">Ver</a>
                 </div>
             </article>
-            <!-- <div class="flexible-video">
+            <div class="flexible-video">
                 <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/dRIZNayrcLk"
                     frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
-            </div> -->
+            </div>
         </div>
     </section>
 
@@ -186,17 +186,28 @@
         </div>
     </footer>
     <script>
-        console.log('Hola mundo! es mi primera linea en JS.');
+        //console.log('Hola mundo! es mi primera linea en JS.');
 
+        const ipad = window.matchMedia('screen and (max-width: 767px');
         const menu = document.querySelector('.menu');
-        console.log(menu);
+        //console.log(menu);
         const burguerButton = document.querySelector('#burguer-menu');
-        console.log(burguerButton);
+        //console.log(burguerButton);
 
-        burguerButton.addEventListener('click', hideShow);
 
         // Function para mostrar y quitar el menu de hambuguer cuando se selecciona
         //Acuerdate que la const menu selecciona la clase de menu
+        ipad.addListener(validation);
+
+        function validation(event) {
+            if (event.matches) {
+                burguerButton.addEventListener('click', hideShow);
+            } else {
+                burguerButton.removeEventListener('click', hideShow);
+            }
+        }
+        validation(ipad);
+
         function hideShow() {
             if (menu.classList.contains('is-active')) {
                 menu.classList.remove('is-active');
